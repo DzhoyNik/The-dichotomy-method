@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0410\u043D\u0442\u043E\u043D\\source\\repos\\Calculator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{97ED87E6-C179-4BFB-ABAF-03B684DA8AED}|Calculator.csproj|C:\\Users\\\u0410\u043D\u0442\u043E\u043D\\source\\repos\\Calculator\\dichotomy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97ED87E6-C179-4BFB-ABAF-03B684DA8AED}|Calculator.csproj|solutionrelative:dichotomy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97ED87E6-C179-4BFB-ABAF-03B684DA8AED}|Calculator.csproj|C:\\Users\\\u0410\u043D\u0442\u043E\u043D\\source\\repos\\Calculator\\controller\\chartbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97ED87E6-C179-4BFB-ABAF-03B684DA8AED}|Calculator.csproj|solutionrelative:controller\\chartbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97ED87E6-C179-4BFB-ABAF-03B684DA8AED}|Calculator.csproj|c:\\users\\\u0430\u043D\u0442\u043E\u043D\\source\\repos\\calculator\\dichotomy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{97ED87E6-C179-4BFB-ABAF-03B684DA8AED}|Calculator.csproj|solutionrelative:dichotomy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97ED87E6-C179-4BFB-ABAF-03B684DA8AED}|Calculator.csproj|C:\\Users\\\u0410\u043D\u0442\u043E\u043D\\source\\repos\\Calculator\\controller\\dichtomymethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97ED87E6-C179-4BFB-ABAF-03B684DA8AED}|Calculator.csproj|solutionrelative:controller\\dichtomymethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dichotomy.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0442\u043E\u043D\\source\\repos\\Calculator\\Dichotomy.xaml.cs",
+              "RelativeDocumentMoniker": "Dichotomy.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043D\u0442\u043E\u043D\\source\\repos\\Calculator\\Dichotomy.xaml.cs",
+              "RelativeToolTip": "Dichotomy.xaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAcwEgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T16:56:41.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dichotomy.xaml",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0442\u043E\u043D\\source\\repos\\Calculator\\Dichotomy.xaml",
+              "RelativeDocumentMoniker": "Dichotomy.xaml",
+              "ToolTip": "C:\\Users\\\u0410\u043D\u0442\u043E\u043D\\source\\repos\\Calculator\\Dichotomy.xaml",
+              "RelativeToolTip": "Dichotomy.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-21T15:41:45.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChartBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0442\u043E\u043D\\source\\repos\\Calculator\\controller\\ChartBuilder.cs",
+              "RelativeDocumentMoniker": "controller\\ChartBuilder.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043D\u0442\u043E\u043D\\source\\repos\\Calculator\\controller\\ChartBuilder.cs",
+              "RelativeToolTip": "controller\\ChartBuilder.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T20:58:14.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DichtomyMethod.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0442\u043E\u043D\\source\\repos\\Calculator\\controller\\DichtomyMethod.cs",
+              "RelativeDocumentMoniker": "controller\\DichtomyMethod.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043D\u0442\u043E\u043D\\source\\repos\\Calculator\\controller\\DichtomyMethod.cs",
+              "RelativeToolTip": "controller\\DichtomyMethod.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAmwGYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T12:58:04.496Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
