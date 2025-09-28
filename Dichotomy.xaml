@@ -109,7 +109,9 @@
                     <RowDefinition Height="1*" />
                 </Grid.RowDefinitions>
 
-                <Button Click="HandleBackMenu" Content="Назад" />
+                <Button
+                    Click="HandleBackMenu"
+                    Content="Назад" />
 
                 <StackPanel
                     Grid.Row="1"

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -30,11 +31,16 @@ namespace Calculator
         private void TextBox_NumberChanged(object sender, TextChangedEventArgs e)
         {
             var textBox = (TextBox)sender;
-            string input = textBox.Text.Replace('.', ',');
-            if (!double.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out double value))
+            string input = textBox.Text;
+            double value;
+
+            if (!double.TryParse(input, NumberStyles.Any, CultureInfo.CurrentCulture, out value))
             {
-                value = 0.0;
-                Console.WriteLine("Недопустимый формат данных!");
+                if (!double.TryParse(input, NumberStyles.Any, CultureInfo.InvariantCulture, out value))
+                {
+                    value = 0.0;
+                    Console.WriteLine("Недопустимый формат данных!");
+                }
             }
 
             switch (textBox.Tag?.ToString())
@@ -53,15 +59,21 @@ namespace Calculator
             }
         }
 
-        private void HandleCalculate(object sender, RoutedEventArgs e)
+        private async void HandleCalculate(object sender, RoutedEventArgs e)
         {
             DichtomyMethod dichtomyMethod = new DichtomyMethod(fun, rangeA, rangeB, accuracy);
 
             if (!string.IsNullOrEmpty(fun) && accuracy > 0) 
             {
-                double root = dichtomyMethod.Solve();
+                if (!dichtomyMethod.ValidateInterval())
+                {
+                    Console.WriteLine("Интервал недопустим для построение графика");
+                    return;
+                }
 
-                if (root != 0 || (rangeA == 0 || rangeB == 0))
+                double root = await Task.Run( () => dichtomyMethod.Solve() );
+
+                if (root != 0 || (rangeA != 0 && rangeB != 0))
                 {
                     ChartBuilder chart = new ChartBuilder(fun);
                     chart.Draw(ChartLine, rangeA, rangeB);

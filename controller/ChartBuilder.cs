@@ -53,10 +53,17 @@ class ChartBuilder
             Name = seriesName
         };
 
-        parser.LocalVariables["x"] = xRoot;
-        double yRoot = parser.Parse(fun);
+        try
+        {
+            parser.LocalVariables["x"] = xRoot;
+            double yRoot = parser.Parse(fun);
 
-        pointSeries.Points.AddXY(xRoot, yRoot);
-        chart.Series.Add(pointSeries);
+            pointSeries.Points.AddXY(xRoot, yRoot);
+            chart.Series.Add(pointSeries);
+        }
+        catch
+        {
+            return;
+        }
     }
 }

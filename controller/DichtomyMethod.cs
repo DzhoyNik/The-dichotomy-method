@@ -1,5 +1,6 @@
 ﻿using Mathos.Parser;
 using System;
+using System.Runtime.InteropServices;
 
 class DichtomyMethod
 {
@@ -24,12 +25,61 @@ class DichtomyMethod
         funB = 0;
     }
 
+    public bool ValidateInterval()
+    {
+        if (rangeA > rangeB)
+        {
+            double temp = rangeA;
+            rangeA = rangeB;
+            rangeB = temp;
+        }
+
+        int testPoints = 100;
+        double step = (rangeA - rangeB) / testPoints;
+        bool hasValidPoints = false;
+
+        for (int i = 0; i <= testPoints; i++)
+        {
+            double x = rangeA + i * step;
+            parser.LocalVariables["x"] = x;
+
+            try
+            {
+                double y = parser.Parse(fun);
+
+                if (!double.IsNaN(y) && !double.IsInfinity(y))
+                {
+                    hasValidPoints = true;
+                    break;
+                }
+            }
+            catch
+            {
+                continue;            
+            }
+        }
+
+        if (!hasValidPoints)
+        {
+            Console.WriteLine("Функция не имеет значений");
+            return false;
+        }
+
+        return true;
+
+    }
+
     public bool CheckFunction()
     {
         try
         {
-            parser.LocalVariables["x"] = 0;
             parser.Parse(fun);
+
+            parser.LocalVariables["x"] = (rangeA + rangeB) / 2;
+            double check = parser.Parse(fun);
+
+            if (double.IsNaN(check) || double.IsInfinity(check)) return false;
+
             return true;
         }
         catch
